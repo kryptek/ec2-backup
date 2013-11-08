@@ -213,7 +213,7 @@ class Ec2Backup
 
             history.sort_by! { |snapshot| snapshot.created_at }
 
-            unless too_soon?(history,snapshot_type)
+            unless too_soon?(history,snapshot_type) || instance_variable_get("@#{snapshot_type}_snapshots") == 0
 
               # Check against threshold limits for backup history and delete as needed
               #
