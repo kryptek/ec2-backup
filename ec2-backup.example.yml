@@ -1,0 +1,19 @@
+
+accounts:
+  production:
+    access_key_id: ''
+    secret_access_key: ''
+  corporate:
+    access_key_id: ''
+    secret_access_key: ''
+  testing:
+    access_key_id: ''
+    secret_access_key: ''
+
+hourly_snapshots: 24
+daily_snapshots: 30
+weekly_snapshots: 4
+monthly_snapshots: 12
+
+tags:
+  backup: 'true'

@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'ec2-backup'
+
+backup = Ec2Backup.new
+backup.start
